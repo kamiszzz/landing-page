@@ -1,0 +1,83 @@
+@import url(./bootstrap.min.css);
+@import url(./global.css);
+@import url(./style.css);
+@import url(./formulario.css);
+@import url(./responsive.css);
+
+
+
+
+
+:root {
+  --primary: #920bec;
+  --primary-dark: #374af8;
+  --secondary: #b47ae4;
+  --light: #b9b9dbb4;
+}
+
+
+
+a {
+  color: var(--primary);
+}
+
+a:hover {
+  color: var(--secondary);
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+.subtitle {
+  color: #9846ce;
+  font-weight: 400;
+}
+
+.block {
+  margin-bottom: 120px;
+}
+
+.button {
+  text-transform: uppercase;
+  font-family: 'Sarala', sans-serif;
+  font-weight: 1000;
+  font-size: 20px;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+}
+
+.button-primary {
+  background-color: white;
+    width: 300px;
+    height: 45px;
+    border-color: rgb(102, 38, 206);
+    box-shadow: 4px 5px 4px #4788bd;
+    border-radius: 72px;
+    color: #4788bd;
+    
+}
+
+.button-primary:hover {
+  color: rgb(205, 178, 228);
+  border: none;
+}
+
+.button-primary-outline {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.button-primary-outline:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: var(--primary);
+}
+
+.img-fluid1 {
+  width: 200px;
+}

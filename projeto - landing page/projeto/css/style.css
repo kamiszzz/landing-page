@@ -1,0 +1,275 @@
+body,
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: url(../assets/footer-bg.png) no-repeat center bottom;
+  padding-bottom: 400px;
+
+}
+
+@keyframes animacao{
+ 
+  to {background-color: rgb(41, 23, 70);}
+}
+
+#slider {
+  background: url(../assets/notasmusicas.svg)  center bottom;
+  background-size: contain;
+  background-color: rgb(94, 33, 207);
+   
+  animation-name: animacao;
+ animation-duration: 5s;
+ animation-iteration-count: infinite;
+}
+
+
+.titulo-principal {
+font-family: 'Kumbh Sans';
+font-weight: 800;
+font-size: 100px;
+text-transform: uppercase;
+text-shadow: 4px 5px 4px #4788bd;
+color: #FFF2E7
+}
+
+#slider h4 {
+  font-family: 'Kumbh Sans';
+  font-weight: 600;
+  font-size: 38px;
+  color: #FFFFFF;
+  text-shadow: 4px 5px 4px #4d4e4e83;
+ 
+}
+
+.descricao{
+  font-family: 'Kumbh Sans';
+  color: rgb(236, 149, 207);
+
+}
+
+.conteudo-secundario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  
+  height: 100px;
+  /* background: linear-gradient(-45deg, #3f3d3f,#eeafe9, #b7eaf7) no-repeat;
+   */
+
+   animation: is-bouncing 3s ease infinite;
+  
+  
+}
+
+@keyframes is-bouncing {
+  to {
+    transform: translateY(30px);
+  }
+}
+
+.informacao {
+  font-family: 'Kumbh Sans';
+  color: rgb(109, 15, 233);
+}
+
+
+.text-uppercase {
+  font-family: 'Kumbh Sans';
+  color: rgb(109, 15, 233);
+}
+
+#servicos a.destaque {
+  display: block;
+  background: var(--light);
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+  color: #000;
+  text-decoration: none;
+  transition: all ease-out 0.2s;
+}
+
+#servicos a.destaque:hover {
+  background: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
+  transform: scale(1.05);
+}
+
+#servicos p {
+  color: var(--dark);
+}
+
+#servicos a.destaque .img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+#servicos a.destaque .img-container img {
+  max-height: 160px;
+}
+
+.conteudo-secundario1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  /* background: linear-gradient(-45deg, #3f3d3f,#eeafe9, #b7eaf7) no-repeat;
+   */
+   background-color:  #9f80f593;
+ height: 300px;
+   padding: 50px;
+  
+   
+  
+}
+
+.conteudo-titulo1{
+  font-family: 'Sarala', sans-serif;
+  font-weight: 1000;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #5437d6;
+  border-right: 2px solid #5437d6;
+  animation: cursor 500ms infinite normal;
+
+}
+
+@keyframes cursor {
+  from {
+    border-right-color: #4788bd;
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
+
+.paragrafo-secundario1 {
+  font-family: 'Sarala', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+
+
+#servicos .badge {
+  font-weight: 400;
+}
+
+#servicos .element-item img {
+  border-radius: 5px;
+  transition: all ease-out 0.2s;
+}
+
+#servicos .element-item img:hover {
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.4);
+}
+
+#servicos .button-group {
+  margin-bottom: 30px;
+}
+
+#servicos .button-group button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  outline: none;
+}
+
+#servicos .button-group button + button {
+  margin-left: 30px;
+}
+
+#servicos .button-group button.active {
+  color: var(--primary);
+}
+
+#depoimentos {
+  margin-top: 100px;
+}
+
+
+#depoimentos .depoimento {
+  background-color: var(--light);
+  border-radius: 5px;
+  display: flex;
+  padding: 30px;
+  
+}
+
+#depoimentos .depoimento .quote {
+  max-width: 35px;
+}
+
+#depoimentos .depoimento .name {
+  color: #aaaaaa;
+}
+
+#depoimentos .depoimento .name span {
+  color: #000;
+  font-weight: 700;
+}
+
+.comentario {
+  font-family: 'Sarala', sans-serif;
+  font-weight: 1000;
+ 
+  text-transform: uppercase;
+  color: #5437d6;
+
+}
+
+
+
+#contato ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#contato ul li {
+  display: flex;
+  list-style-type: none;
+  margin-left: 25px;
+}
+
+#contato ul li:first-child {
+  margin-left: 0;
+}
+
+#contato ul li a {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  transition: all ease-out 0.2s;
+}
+
+#contato ul li a:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+}
+
+#contato ul li img {
+  max-height: 20px;
+}
+
+.end-text {
+  font-family: 'Kumbh Sans';
+  font-weight: 600;
+  color: #5f8ff8;
+}
+
